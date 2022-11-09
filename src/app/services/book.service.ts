@@ -32,6 +32,7 @@ export class BookService {
 
   removeBook(book: Book) {
     const index = this.selectedBooks.indexOf(book);
+    this.avilableBooks.push(book);
     this.selectedBooks.splice(index, 1);
   }
 

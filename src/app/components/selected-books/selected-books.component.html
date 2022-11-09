@@ -14,7 +14,6 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
                   <th scope="col">Title</th>
                   <th scope="col">Year</th>
                   <th scope="col">Author</th>
@@ -23,7 +22,6 @@
               </thead>
               <tbody>
                 <tr *ngFor="let book of selectedBooks | async">
-                  <th scope="row">{{ book.id }}</th>
                   <td>{{ book.title }}</td>
                   <td>{{ book.year }}</td>
                   <td>{{ book.author }}</td>
