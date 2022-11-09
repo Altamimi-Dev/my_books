@@ -1,0 +1,37 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-12 mx-auto">
+      <div class="card rounded-3 border-0 shadow-sm">
+        <div class="card-body p-5">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Year</th>
+                  <th scope="col">Author</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let book of avilableBooks | async">
+                  <td>{{ book.title }}</td>
+                  <td>{{ book.year }}</td>
+                  <td>{{ book.author }}</td>
+                  <td>
+                    <button
+                      class="btn btn-success btn-sm rounded-2"
+                      (click)="onAddBook(book)"
+                    >
+                      <fa-icon [icon]="add"></fa-icon>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
