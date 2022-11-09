@@ -1,3 +1,19 @@
 button {
   float: right;
 }
+
+.btn-primary {
+  color: white;
+  background-color: rgb(53, 75, 135);
+  border-color: rgb(68, 96, 172);
+
+  &:hover {
+    color: white;
+    background-color: rgb(68, 96, 172);
+    border-color: rgb(68, 96, 172);
+  }
+}
+
+input {
+  background-color: whitesmoke;
+}
