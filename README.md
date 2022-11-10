@@ -9,7 +9,8 @@ Visit [Deployed App](https://my-books-beige.vercel.app/)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone the repo when open Run `npm install`.
+Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Run lint
 
