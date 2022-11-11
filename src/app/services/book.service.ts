@@ -42,11 +42,9 @@ export class BookService {
     while (this.selectedBooks.length > 0) {
       this.selectedBooks.pop();
     }
-    console.log(this.myBooks);
   }
 
   getMyBooks(): Observable<MyBooks[]> {
-    console.log(this.myBooks);
     return of(this.myBooks);
   }
 
