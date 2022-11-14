@@ -38,7 +38,12 @@ export class BookService {
 
   saveList(title: string) {
     const books = [...this.selectedBooks];
-    this.myBooks.push(new MyBooks(books, title));
+    const myBooks = this.myBooks.find((myBook) => myBook.title === title);
+    if (myBooks) {
+      myBooks.books = [...myBooks.books, ...books];
+    } else {
+      this.myBooks.push({ title, books });
+    }
     while (this.selectedBooks.length > 0) {
       this.selectedBooks.pop();
     }
